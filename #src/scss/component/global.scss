@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1rem;
+	font-family: $open-sans;
+	color: $gray;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	@include breakpoint(xs) {
+		max-width: 540px;
+	}
+
+	@include breakpoint(sm) {
+		max-width: 720px;
+	}
+
+	@include breakpoint(md) {
+		max-width: 960px;
+	}
+
+	@include breakpoint(lg) {
+		max-width: 1170px;
+	}
+}
+.wrapper {
+	min-height: 100vh;
+}
