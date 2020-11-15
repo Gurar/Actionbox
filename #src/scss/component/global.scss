@@ -2,6 +2,13 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 html, body {
@@ -15,15 +22,17 @@ html {
 
 body {
 	font-size: 1rem;
-	font-family: $open-sans;
-	color: $gray;
+	font-family: 'Raleway', sans-serif;
+	color: #2d3033;
 }
 
 .container {
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	position: relative;
 	@include breakpoint(xs) {
 		max-width: 540px;
 	}
@@ -42,4 +51,6 @@ body {
 }
 .wrapper {
 	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
 }

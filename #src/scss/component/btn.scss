@@ -1,0 +1,11 @@
+.btn {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 17px 50px;
+    text-transform: uppercase;
+    color: #2d3033;
+    &--ascend {
+        background-color: #e84545;
+    }
+}
